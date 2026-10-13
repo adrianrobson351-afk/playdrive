@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050914">
+<title>PlayDrive | Músicas no seu ritmo</title>
+<style>
+:root{--bg:#050914;--panel:#0c1425;--blue:#087cff;--cyan:#10d5ff;--white:#f5f8ff;--muted:#a9b7cf;--line:#1c3150}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#102a50 0,transparent 35%),var(--bg);color:var(--white);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:980px;margin:auto;padding:18px}.top{display:flex;align-items:center;gap:12px;padding:12px 0 24px}.mark{width:48px;height:48px;border:2px solid var(--cyan);border-radius:15px;display:grid;place-items:center;color:var(--cyan);font-size:26px;font-weight:900;box-shadow:0 0 24px #087cff40}.brand{font-size:25px;font-weight:950;letter-spacing:1px}.brand span{color:var(--cyan)}.tag{color:var(--muted);font-size:12px;letter-spacing:2px}
+.hero{padding:28px 22px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(130deg,#0d1d36,#07101e 65%);overflow:hidden;position:relative}.eyebrow{color:var(--cyan);font-weight:800;letter-spacing:2px;font-size:12px}.hero h1{font-size:clamp(30px,7vw,52px);line-height:1.02;margin:12px 0}.hero p{color:var(--muted);max-width:560px;line-height:1.6}.price{display:inline-block;background:linear-gradient(90deg,var(--blue),var(--cyan));color:#00101f;font-weight:950;padding:9px 14px;border-radius:12px;font-size:19px;margin-top:8px}
+.notice{margin:16px 0;padding:12px 14px;border:1px solid #25476b;background:#0a182a;border-radius:12px;color:#d9e9ff;font-size:13px;line-height:1.5}
+.section-title{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:28px 0 14px}.section-title h2{margin:0;font-size:22px}.section-title small{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:linear-gradient(145deg,#101c30,#09111f);border:1px solid var(--line);border-radius:18px;padding:16px;min-width:0}.folder{height:68px;width:78px;position:relative;margin-bottom:10px}.folder:before{content:"";position:absolute;left:4px;top:2px;width:37px;height:13px;background:#ffcb28;border-radius:7px 7px 0 0}.folder:after{content:"";position:absolute;inset:11px 0 0;background:linear-gradient(145deg,#ffe36b,#f5a800);border:1px solid #ffdf67;border-radius:5px 10px 7px 7px;box-shadow:0 8px 18px #ffb0001b}.card h3{margin:0 0 5px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:12px;line-height:1.45}.card .amount{font-size:18px;font-weight:850;margin:12px 0}.btn{border:0;border-radius:11px;background:linear-gradient(90deg,var(--blue),var(--cyan));color:#00101d;font-weight:850;padding:12px 14px;width:100%;font-size:14px;cursor:pointer}.btn.secondary{background:#13243b;border:1px solid #2b4a70;color:var(--white)}.wide{margin-top:20px}.steps{display:grid;gap:10px}.step{display:flex;gap:12px;padding:13px;border:1px solid var(--line);border-radius:14px;background:#091321}.num{flex:0 0 30px;height:30px;display:grid;place-items:center;border-radius:10px;background:#123b68;color:#6fe2ff;font-weight:900}.step p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}.step b{color:var(--white)}footer{padding:28px 0 14px;color:var(--muted);font-size:12px;line-height:1.6;text-align:center}
+.modal{display:none;position:fixed;inset:0;background:#000b;z-index:10;padding:16px;align-items:center;justify-content:center}.modal.open{display:flex}.dialog{max-width:440px;width:100%;background:#0b1526;border:1px solid #29496e;border-radius:20px;padding:20px;max-height:90vh;overflow:auto}.dialog h2{margin-top:0}.field{display:block;margin:13px 0 6px;color:#c9d7ed;font-size:13px}.dialog input,.dialog select{width:100%;padding:12px;border-radius:10px;border:1px solid #29415f;background:#050b15;color:white;font-size:15px}.dialog .rowbtn{display:flex;gap:8px;margin-top:16px}.rowbtn button{flex:1}.close{float:right;background:none;border:0;color:#fff;font-size:25px;cursor:pointer}.fine{font-size:11px;color:var(--muted);line-height:1.5}
+@media(min-width:650px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding:40px}.wrap{padding:26px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div class="mark">▶</div>
+  <div><div class="brand">PLAY<span>DRIVE</span></div><div class="tag">MÚSICAS NO SEU RITMO</div></div>
+</header>
+<section class="hero">
+  <div class="eyebrow">SANHARÓ • PERNAMBUCO</div>
+  <h1>Sua música,<br><span style="color:var(--cyan)">do seu jeito.</span></h1>
+  <p>Pacotes musicais organizados por estilo, prontos para baixar em arquivo ZIP. Escolha uma categoria e faça seu pedido pelo WhatsApp.</p>
+  <div class="price">Pacotes a partir de R$ 15,00</div>
+</section>
+<div class="notice"><b>Loja em preparação:</b> os botões de pedido funcionam após configurar seu WhatsApp. Adicione somente arquivos que você criou, tem licença para distribuir ou cuja distribuição seja permitida.</div>
+<div class="section-title"><h2>Escolha seu estilo</h2><small>Pacotes ZIP</small></div>
+<div class="grid" id="catalog"></div>
+<section class="wide">
+  <div class="section-title"><h2>Como comprar</h2></div>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><p><b>Escolha o pacote</b><br>Selecione o estilo musical desejado.</p></div>
+    <div class="step"><div class="num">2</div><p><b>Peça pelo WhatsApp</b><br>Você receberá as instruções para pagamento via Pix manual.</p></div>
+    <div class="step"><div class="num">3</div><p><b>Confirmação e entrega</b><br>Após conferir o pagamento, o vendedor envia o link privado para baixar o ZIP.</p></div>
+  </div>
+</section>
+<button class="btn secondary wide" onclick="openContact()">Configurar contato da loja (neste aparelho)</button>
+<footer>PlayDrive • Sanharó–PE e cidades próximas<br>Não envie senhas, códigos bancários ou dados sensíveis pelo formulário.</footer>
+</div>
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+ <div class="dialog">
+  <button class="close" onclick="closeContact()" aria-label="Fechar">×</button>
+  <h2>Contato da PlayDrive</h2>
+  <p class="fine">Informe seu número com DDI e DDD, somente números (ex.: 5587999999999). Este protótipo guarda a configuração apenas nesta página aberta; para uma loja publicada, o contato deverá ser colocado no código antes da hospedagem.</p>
+  <label class="field" for="phone">WhatsApp da loja</label><input id="phone" inputmode="numeric" placeholder="5587XXXXXXXX">
+  <label class="field" for="pix">Nome do recebedor Pix (opcional)</label><input id="pix" placeholder="Nome que aparecerá no pagamento">
+  <div class="rowbtn"><button class="btn secondary" onclick="closeContact()">Cancelar</button><button class="btn" onclick="saveContact()">Salvar</button></div>
+ </div>
+</div>
+<script>
+const products=[
+ {name:"Forró",desc:"Clássicos e novidades autorizadas",price:15},
+ {name:"Arrocha",desc:"Seleção romântica",price:15},
+ {name:"Sertanejo",desc:"Para ouvir em qualquer lugar",price:15},
+ {name:"Vaquejada",desc:"Ritmo de vaquejada",price:15},
+ {name:"Piseiro",desc:"Batidas e sucessos",price:15},
+ {name:"Reggae",desc:"Vibrações positivas",price:15},
+ {name:"Gospel",desc:"Músicas de fé",price:15},
+ {name:"Paredão",desc:"Som para animar",price:15},
+ {name:"Eletrônica",desc:"Batidas eletrônicas",price:15},
+ {name:"Funk",desc:"Seleção de funk",price:15},
+ {name:"Hip Hop",desc:"Rap e hip hop",price:15},
+ {name:"Românticas",desc:"Canções para momentos especiais",price:15}
+];
+let storePhone="";
+let pixName="";
+const catalog=document.getElementById("catalog");
+products.forEach((p,i)=>{
+ const card=document.createElement("article");card.className="card";
+ card.innerHTML=`<div class="folder" aria-hidden="true"></div><h3>${p.name}</h3><p>${p.desc}</p><div class="amount">R$ ${p.price.toFixed(2).replace(".",",")}</div><button class="btn" onclick="order(${i})">Pedir pacote</button>`;
+ catalog.appendChild(card);
+});
+function order(i){
+ const p=products[i];
+ const msg=`Olá, PlayDrive! Quero pedir o pacote ${p.name} por R$ ${p.price.toFixed(2).replace(".",",")}. Como faço o pagamento via Pix e recebo o ZIP?`;
+ if(!storePhone){openContact();alert("Configure o WhatsApp da loja primeiro.");return}
+ window.open("https://wa.me/"+storePhone+"?text="+encodeURIComponent(msg),"_blank","noopener");
+}
+function openContact(){document.getElementById("modal").classList.add("open");document.getElementById("phone").value=storePhone;document.getElementById("pix").value=pixName}
+function closeContact(){document.getElementById("modal").classList.remove("open")}
+function saveContact(){storePhone=document.getElementById("phone").value.replace(/\D/g,"");pixName=document.getElementById("pix").value.trim();if(storePhone.length<12){alert("Digite o número completo com código do país e DDD. Ex.: 5587999999999");return}closeContact();alert("Contato definido nesta sessão. Para ficar permanente no site publicado, configure o número no código antes de hospedar.")}
+</script>
+</body>
+</html>
